@@ -42,5 +42,13 @@ private:
     QVector<QPoint> m_points;
 
     bool isPaintLinesClicked = false;
+
+// di drawingcanvas.h (private section)
+
+private:
+    bool isPaintLinesClicked = false;
+    QVector<QRect> m_detectedSegments;
+    void dumpWindow(int x, int y, const CustomMatrix& mat);
+
 };
 #endif // DRAWINGCANVAS_H
